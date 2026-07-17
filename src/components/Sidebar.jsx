@@ -6,7 +6,7 @@ function Sidebar(){
             className="bg-dark text-white p-3 d-flex flex-column"
             style={{
                 width: "250px",
-                height: "100vh"
+                minHeight: "100vh"
             }}
         >
             <h3 className="mb-4">
