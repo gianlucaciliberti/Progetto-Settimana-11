@@ -1,35 +1,30 @@
 import { Link } from "react-router-dom";
 
-function Sidebar(){
+function Sidebar() {
     return (
         <aside
-            className="bg-dark text-white p-3 d-flex flex-column"
-            style={{
-                width: "250px",
-                minHeight: "100vh"
-            }}
-        >
-            <h3 className="mb-4">
-                Spotify Clone
+            className="sidebar p-3 d-flex flex-column">
+            <h3 className="spotify-logo mb-4">
+                🎵 Spotify
             </h3>
 
             <nav className="d-flex flex-column gap-3">
                 <Link
                     to="/"
-                    className="text-white text-decoration-none"
+                    className="sidebar-link text-decoration-none"
                 >
                     🏠 Home
                 </Link>
 
                 <Link
                     to="/search"
-                    className="text-white text-decoration-none"
+                    className="sidebar-link text-decoration-none"
                 >
                     🔍 Search
                 </Link>
 
                 <a href="#" className="text-decoration-none text-white" >📚 Your Library</a>
-                
+
             </nav>
 
             <div className="mt-auto">
@@ -43,7 +38,7 @@ function Sidebar(){
                     <a
                         href="#"
                         className="text-secondary text-decoration-none small">Cookie</a>
-                    
+
                     <a
                         href="#"
                         className="text-secondary text-decoration-none small">Privacy</a>

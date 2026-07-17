@@ -12,9 +12,9 @@ function App(){
 
   return (
     <BrowserRouter>
-      <div className="d-flex bg-black" style={{minHeight:"100vh"}}>
+      <div className="d-flex app-container"> 
         <Sidebar />
-        <main className="flex-grow-1">
+        <main className="flex-grow-1 content-area">
           <Routes>
             <Route 
               path="/"

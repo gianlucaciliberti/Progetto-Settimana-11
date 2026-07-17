@@ -1,25 +1,23 @@
 import { Card } from "react-bootstrap";
 
 function AlbumCard({ album }) {
+
     return (
-        <Card 
-            className="bg-dark text-white border-0 h-100 album-card"
-        >
-            <Card.Img
-                variant="top"
+        <div className="album-card text-center">
+            <img
                 src={album.album.cover_medium}
+                alt={album.title}
+                className="album-image"
             />
 
-            <Card.Body>
-                <Card.Title className="fs-6">
-                    {album.title}
-                </Card.Title>
+            <h6 className="mt-2 mb-0 text-white">
+                {album.title}
+            </h6>
 
-                <Card.Text className="text-secondary small">
-                    {album.artist.name}
-                </Card.Text>
-            </Card.Body>
-        </Card>
+            <small className="text-white-50">
+                {album.artist.name}
+            </small>
+        </div>
     )
 }
 export default AlbumCard;
