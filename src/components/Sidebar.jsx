@@ -5,11 +5,11 @@ function Sidebar({ menuOpen, setMenuOpen }) {
         <aside
             className={`sidebar p-3 d-flex flex-column ${menuOpen ? "sidebar-open" : ""
                 }`}>
-            <h3 className="spotify-logo mb-4">
+            <h3 className="spotify-logo">
                 <i className="bi bi-spotify me-2"></i> Spotify
             </h3>
 
-            <nav className="d-flex flex-column gap-3">
+            <div className="d-flex flex-column gap-3">
                 <Link
                     to="/" onClick={()=>setMenuOpen(false)}
                     className="sidebar-link text-decoration-none"
@@ -26,7 +26,7 @@ function Sidebar({ menuOpen, setMenuOpen }) {
 
                 <a href="#" className="text-decoration-none text-white" ><i className="bi bi-collection-fill me-2"></i>Your Library</a>
 
-            </nav>
+            </div>
 
             <div className="mt-auto">
                 <button

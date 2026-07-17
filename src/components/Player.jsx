@@ -28,10 +28,6 @@ function Player() {
                             <i className="bi bi-skip-forward-fill"></i>
                             <i className="bi bi-repeat"></i>
                         </div> 
-
-                        <div className="player-right">
-                            <i className="bi bi-volume-up-fill"></i>
-                        </div>
                     </>
                 ) : (
                     <p className="text-secondary">
