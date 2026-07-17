@@ -84,3 +84,26 @@ body {
 .content-area {
   padding-left: 30px;
 }
+
+.top-navbar {
+    width:100%;
+}
+
+.top-navbar ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.top-navbar a {
+    color:white;
+    text-decoration:none;
+    font-size:0.95rem;
+    opacity:0.8;
+    transition:0.2s;
+}
+
+.top-navbar a:hover {
+    opacity:1;
+    color:#1DB954;
+}

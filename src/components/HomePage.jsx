@@ -1,5 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import AlbumCard from "./AlbumCard";
+import MyNavbar from "./MyNavbar";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,9 +26,7 @@ function HomePage() {
 
     return (
         <div className="p-4 text-white">
-            <h1 className="text-white mb-4">
-                Home
-            </h1>
+            <MyNavbar />
 
             <section className="mb-5">
                 <h2 className="text-white mb-3">

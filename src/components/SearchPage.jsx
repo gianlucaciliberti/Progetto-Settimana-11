@@ -4,9 +4,10 @@ import { useEffect } from "react";
 
 import { getRock, getPop, getHipHop, searchMusic } from "../redux/actions";
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Navbar } from "react-bootstrap";
 
 import AlbumCard from "./AlbumCard";
+import MyNavbar from "./MyNavbar";
 
 function SearchPage() {
     const dispatch = useDispatch();
@@ -55,9 +56,7 @@ function SearchPage() {
     )
     return (
         <div className="page-background p-4 text-white">
-            <h1>
-                Search
-            </h1>
+            <MyNavbar />
             <div className="d-flex gap-2 mb-5">
                 <input className="form-control" value={query} onChange={(e) =>
                     setQuery(e.target.value)
