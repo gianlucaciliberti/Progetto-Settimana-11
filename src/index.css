@@ -54,9 +54,20 @@ body {
 
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 80vh;
+    transition: left .3s ease;
+    z-index: 999;
+  }
+  .sidebar-open{
+    left:0;
   }
 }
+
+
 
 .sidebar-link {
   color: white;
@@ -74,6 +85,21 @@ body {
 .sidebar a:hover,
 .sidebar button:hover {
   color: #1db954;
+}
+
+.hamburger-btn{
+    font-size:2rem;
+    color:white;
+    background:none;
+    border: none;
+    margin-bottom: auto;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 998;
 }
 
 .spotify-logo {

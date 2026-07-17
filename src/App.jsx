@@ -15,7 +15,10 @@ function App(){
   return (
     <BrowserRouter>
       <div className="d-flex app-container">
-        <button className="hamburger-btn d-md-none" onClick={()=> setMenuOpen(true)}>☰</button> 
+        <button className="hamburger-btn d-md-none" onClick={()=> setMenuOpen(true)}><i className="bi bi-list"></i></button>
+        {menuOpen&&(
+          <div className="overlay" onClick={()=>setMenuOpen(false)}></div>
+        )} 
         <Sidebar menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}/>
         <main className="flex-grow-1 content-area">
