@@ -1,9 +1,12 @@
 import { Card } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { setCurrentTrack } from "../redux/actions";
 
 function AlbumCard({ album }) {
+    const dispatch = useDispatch();
 
     return (
-        <div className="album-card text-center">
+        <div className="album-card text-center" onClick={()=>dispatch(setCurrentTrack(album))}>
             <img
                 src={album.album.cover_medium}
                 alt={album.title}

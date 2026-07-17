@@ -3,7 +3,8 @@ import {
     SET_POP,
     SET_HIPHOP,
     SET_SEARCH_RESULTS,
-    SET_LOADING
+    SET_LOADING,
+    SET_CURRENT_TRACK
 } from "./actions";
 
 const initialState = {
@@ -19,6 +20,10 @@ const initialState = {
         results: [],
         loading: false,
         error: null
+    },
+
+    player: {
+        currentTrack: null
     }
 };
 
@@ -64,6 +69,11 @@ const mainReducer = (
                     ...state.search, loading: action.payload
                 }
             }
+        
+        case SET_CURRENT_TRACK:
+            return {...state, player: {
+                currentTrack:action.payload
+            }}
         default:
             return state;
     }

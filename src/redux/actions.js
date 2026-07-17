@@ -1,8 +1,10 @@
 export const SET_ROCK = "SET_ROCK";
 export const SET_POP = "SET_POP";
 export const SET_HIPHOP = "SET_HIPHOP";
-export const SET_SEARCH_RESULTS = "SET_SEARCH_RESULTS"
-export const SET_LOADING = "SET_LOADING"
+export const SET_SEARCH_RESULTS = "SET_SEARCH_RESULTS";
+export const SET_LOADING = "SET_LOADING";
+export const SET_CURRENT_TRACK = "SET_CURRENT_TRACK";
+
 
 
 export const setRock = (albums) => {
@@ -102,5 +104,12 @@ export const setLoading = (value)=>{
     return {
         type: SET_LOADING,
         payload:value
+    }
+}
+
+export const setCurrentTrack = (track) => {
+    return {
+        type: SET_CURRENT_TRACK,
+        payload:track
     }
 }

@@ -7,6 +7,7 @@ import {
 import Sidebar from "./components/Sidebar";
 import HomePage from "./components/HomePage";
 import SearchPage from "./components/SearchPage";
+import Player from "./components/Player";
 import { useState } from "react";
 
 function App(){
@@ -34,6 +35,7 @@ function App(){
             />
           </Routes>
         </main>
+        <Player />
       </div>
     </BrowserRouter>
   )
